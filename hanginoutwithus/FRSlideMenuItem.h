@@ -10,8 +10,7 @@
 #import "FRSlideMenuIcon.h"
 
 typedef enum {
-	FRMenuItemErrorNoChildTitle,
-	FRMenuItemErrorNoChildIcon
+	FRMenuItemErrorNoTitle
 } FRMenuItemError;
 
 @interface FRSlideMenuItem : NSObject {
@@ -26,18 +25,27 @@ typedef enum {
 
 #pragma mark -
 #pragma mark Properties
+
 @property (retain) NSString *title;
 @property (retain) FRSlideMenuIcon *icon;
+@property (assign) FRSlideMenuItem *parent;
 
 #pragma mark -
 #pragma mark Designated Initialisers
+
 -(id)initWithTitle:(NSString *)theTitle icon:(FRSlideMenuIcon *)theIcon;
 
 #pragma mark -
 #pragma mark Menu Item Management Methods
+
 -(bool)addChild:(FRSlideMenuItem *)theItem error:(NSError **)theError;
 -(void)removeChild:(FRSlideMenuItem *)theItem;
 -(void)removeChildAtIndex:(int)theIndex;
 -(NSMutableArray *)getChildren;
+
+#pragma mark -
+#pragma mark Menu Item Validation Methods
+
++(bool)validateMenuItem:(FRSlideMenuItem *)theItem error:(NSError **)theError;
 
 @end

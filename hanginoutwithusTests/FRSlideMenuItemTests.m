@@ -31,6 +31,21 @@
 #pragma mark -
 #pragma mark Unit Tests
 
+-(void)testMenuItemValidation {
+	// Declerations
+	NSError *error = nil;
+	FRSlideMenuItem *item = [[FRSlideMenuItem alloc] init];
+	
+	// Assignments for testing
+	bool validationResponse = [FRSlideMenuItem validateMenuItem:item error:&error];
+	
+	// Assertions
+	STAssertFalse(validationResponse, @"Empty menu item should return false");
+	STAssertEquals([error localizedDescription], @"Title must not be empty", @"Correct error message returned");
+	STAssertEquals([error code], FRMenuItemErrorNoTitle, @"Correct error code returned");
+	
+}
+
 -(void)testAddMenuItemWithoutTitle {
 	
 	// Declerations
@@ -44,8 +59,8 @@
 	
 	// Assertions
 	STAssertFalse(addResponse, @"Cannot insert menu item without title");
-	STAssertEquals([error localizedDescription], @"Child title must not be empty", @"Correct error message returned");
-	STAssertEquals([error code], FRMenuItemErrorNoChildTitle, @"Correct error code returned");
+	STAssertEquals([error localizedDescription], @"Title must not be empty", @"Correct error message returned");
+	STAssertEquals([error code], FRMenuItemErrorNoTitle, @"Correct error code returned");
 	STAssertTrue([children count] == 0, @"Child count equals 0");
 	
 }

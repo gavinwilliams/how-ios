@@ -18,6 +18,7 @@
 	FRSlideMenuItem *menuItem;
 }
 
+-(void)testMenuItemValidation;
 -(void)testAddMenuItemWithoutTitle;
 -(void)testAddMenuItemWithTitle;
 

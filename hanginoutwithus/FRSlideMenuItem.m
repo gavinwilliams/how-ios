@@ -15,9 +15,11 @@
 #pragma mark Properties
 @synthesize title;
 @synthesize icon;
+@synthesize parent;
 
 #pragma mark -
 #pragma mark Designated Initialisers
+
 -(id)init {
 	
 	if((self = [super init])){
@@ -43,15 +45,14 @@
 
 #pragma mark -
 #pragma mark Menu Management Methods
+
 -(bool)addChild:(FRSlideMenuItem *)theItem error:(NSError **)theError {
 	
-	if([[theItem title] length] == 0){
-		NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
-		[errorDetail setValue:@"Child title must not be empty" forKey:NSLocalizedDescriptionKey];
-		*theError = [NSError errorWithDomain:@"FRSlideMenu" code:FRMenuItemErrorNoChildTitle userInfo:errorDetail];		
+	if([FRSlideMenuItem validateMenuItem:theItem error:theError] == false){
 		return false;
 	}
 	
+	[theItem setParent:self];
 	[children addObject:theItem];
 	return true;
 	
@@ -70,7 +71,24 @@
 }
 
 #pragma mark -
+#pragma mark Menu Item Validation Methods
+
++(bool)validateMenuItem:(FRSlideMenuItem *)theItem error:(NSError **)theError {
+	
+	if([[theItem title] length] == 0){
+		NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+		[errorDetail setValue:@"Title must not be empty" forKey:NSLocalizedDescriptionKey];
+		*theError = [NSError errorWithDomain:@"FRSlideMenu" code:FRMenuItemErrorNoTitle userInfo:errorDetail];		
+		return false;
+	}
+	
+	return true;
+	
+}
+
+#pragma mark -
 #pragma mark Dealocators
+
 -(void)dealloc {
 	[title release];
 	[icon release];
