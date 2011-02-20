@@ -31,6 +31,8 @@
 		DD2A60BC1304A21D001F4BD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A60BB1304A21D001F4BD3 /* Default.png */; };
 		DD2A60BE1304A229001F4BD3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A60BD1304A229001F4BD3 /* Default@2x.png */; };
 		DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD627D2113105006003686BA /* QuartzCore.framework */; };
+		DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */; };
+		DD9627AE1311A71800674874 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042A131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */; };
@@ -321,6 +323,9 @@
 		DD2A60BB1304A21D001F4BD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		DD2A60BD1304A229001F4BD3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		DD627D2113105006003686BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD9627AA13119BDE00674874 /* FRSlideMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuTests.h; sourceTree = "<group>"; };
+		DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuTests.m; sourceTree = "<group>"; };
+		DD9627AD1311A71800674874 /* navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = navigation.plist; sourceTree = "<group>"; };
 		DDD503C51310517200D429F1 /* hanginoutwithus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanginoutwithus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD503C71310517200D429F1 /* hanginoutwithusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanginoutwithusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD50427131052E400D429F1 /* FRSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenu.h; sourceTree = "<group>"; };
@@ -522,6 +527,7 @@
 				DD229D35130495A60083F68E /* hanginoutwithusTests-Info.plist */,
 				DD229D36130495A60083F68E /* InfoPlist.strings */,
 				DD229D39130495A60083F68E /* hanginoutwithusTests-Prefix.pch */,
+				DD9627AD1311A71800674874 /* navigation.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -577,6 +583,8 @@
 			children = (
 				DDD504341311336F00D429F1 /* FRSlideMenuItemTests.h */,
 				DDD504351311336F00D429F1 /* FRSlideMenuItemTests.m */,
+				DD9627AA13119BDE00674874 /* FRSlideMenuTests.h */,
+				DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */,
 			);
 			name = "Slide Menu";
 			sourceTree = "<group>";
@@ -907,6 +915,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD229D38130495A60083F68E /* InfoPlist.strings in Resources */,
+				DD9627AE1311A71800674874 /* navigation.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +959,7 @@
 				DDD5042F1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
 				DDD50433131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
 				DDD504361311336F00D429F1 /* FRSlideMenuItemTests.m in Sources */,
+				DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
