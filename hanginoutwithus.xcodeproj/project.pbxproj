@@ -11,7 +11,6 @@
 		320A2827FEC940B25BC42C65 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A2827FEC940B25BC42C64 /* libThree20Core.a */; };
 		320A5A189C235877202780D5 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A5A189C235877202780D4 /* libThree20Network.a */; };
 		320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A737074758E53BA54BE94 /* libThree20UINavigator.a */; };
-		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
@@ -29,10 +28,16 @@
 		DD229D2F130495A60083F68E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD229D11130495A60083F68E /* CoreGraphics.framework */; };
 		DD229D30130495A60083F68E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD229D13130495A60083F68E /* CoreData.framework */; };
 		DD229D38130495A60083F68E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD229D36130495A60083F68E /* InfoPlist.strings */; };
-		DD229D3B130495A60083F68E /* hanginoutwithusTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DD229D3A130495A60083F68E /* hanginoutwithusTests.h */; };
-		DD229D3D130495A60083F68E /* hanginoutwithusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD229D3C130495A60083F68E /* hanginoutwithusTests.m */; };
 		DD2A60BC1304A21D001F4BD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A60BB1304A21D001F4BD3 /* Default.png */; };
 		DD2A60BE1304A229001F4BD3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A60BD1304A229001F4BD3 /* Default@2x.png */; };
+		DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD627D2113105006003686BA /* QuartzCore.framework */; };
+		DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
+		DDD5042A131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
+		DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */; };
+		DDD5042F1310536200D429F1 /* FRSlideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */; };
+		DDD50432131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50431131054BF00D429F1 /* FRSlideMenuIcon.m */; };
+		DDD50433131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50431131054BF00D429F1 /* FRSlideMenuIcon.m */; };
+		DDD504361311336F00D429F1 /* FRSlideMenuItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD504351311336F00D429F1 /* FRSlideMenuItemTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,11 +300,9 @@
 		320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../../libraries/three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320A5A189C235877202780D0 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../../libraries/three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UINavigator.xcodeproj; path = ../../libraries/three20/src/Three20UINavigator/Three20UINavigator.xcodeproj; sourceTree = SOURCE_ROOT; };
-		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDK_ROOT; };
 		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = ../../libraries/three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../../libraries/three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = ../../libraries/three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
-		DD229D09130495A60083F68E /* hanginoutwithus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanginoutwithus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD229D0D130495A60083F68E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD229D0F130495A60083F68E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD229D11130495A60083F68E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -312,14 +315,22 @@
 		DD229D1F130495A60083F68E /* hanginoutwithusAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hanginoutwithusAppDelegate.m; sourceTree = "<group>"; };
 		DD229D22130495A60083F68E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		DD229D25130495A60083F68E /* hanginoutwithus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hanginoutwithus.xcdatamodel; sourceTree = "<group>"; };
-		DD229D2C130495A60083F68E /* hanginoutwithusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanginoutwithusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD229D35130495A60083F68E /* hanginoutwithusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hanginoutwithusTests-Info.plist"; sourceTree = "<group>"; };
 		DD229D37130495A60083F68E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD229D39130495A60083F68E /* hanginoutwithusTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hanginoutwithusTests-Prefix.pch"; sourceTree = "<group>"; };
-		DD229D3A130495A60083F68E /* hanginoutwithusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hanginoutwithusTests.h; sourceTree = "<group>"; };
-		DD229D3C130495A60083F68E /* hanginoutwithusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hanginoutwithusTests.m; sourceTree = "<group>"; };
 		DD2A60BB1304A21D001F4BD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		DD2A60BD1304A229001F4BD3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		DD627D2113105006003686BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DDD503C51310517200D429F1 /* hanginoutwithus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanginoutwithus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD503C71310517200D429F1 /* hanginoutwithusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanginoutwithusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD50427131052E400D429F1 /* FRSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenu.h; sourceTree = "<group>"; };
+		DDD50428131052E400D429F1 /* FRSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenu.m; sourceTree = "<group>"; };
+		DDD5042C1310536200D429F1 /* FRSlideMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuItem.h; sourceTree = "<group>"; };
+		DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuItem.m; sourceTree = "<group>"; };
+		DDD50430131054BF00D429F1 /* FRSlideMenuIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuIcon.h; sourceTree = "<group>"; };
+		DDD50431131054BF00D429F1 /* FRSlideMenuIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuIcon.m; sourceTree = "<group>"; };
+		DDD504341311336F00D429F1 /* FRSlideMenuItemTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuItemTests.h; sourceTree = "<group>"; };
+		DDD504351311336F00D429F1 /* FRSlideMenuItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuItemTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,12 +338,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */,
 				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
 				320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */,
 				320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */,
 				320A2827FEC940B25BC42C65 /* libThree20Core.a in Frameworks */,
 				320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */,
-				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
 				320A5A189C235877202780D5 /* libThree20Network.a in Frameworks */,
 				320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */,
 				DD229D0E130495A60083F68E /* UIKit.framework in Frameworks */,
@@ -436,8 +447,8 @@
 		DD229CFE130495A60083F68E = {
 			isa = PBXGroup;
 			children = (
-				DD229D15130495A60083F68E /* hanginoutwithus */,
 				DD229D33130495A60083F68E /* hanginoutwithusTests */,
+				DD229D15130495A60083F68E /* hanginoutwithus */,
 				DD229D0C130495A60083F68E /* Frameworks */,
 				DD229D0A130495A60083F68E /* Products */,
 			);
@@ -446,8 +457,8 @@
 		DD229D0A130495A60083F68E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD229D09130495A60083F68E /* hanginoutwithus.app */,
-				DD229D2C130495A60083F68E /* hanginoutwithusTests.octest */,
+				DDD503C51310517200D429F1 /* hanginoutwithus.app */,
+				DDD503C71310517200D429F1 /* hanginoutwithusTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,12 +466,12 @@
 		DD229D0C130495A60083F68E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD627D2113105006003686BA /* QuartzCore.framework */,
 				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
 				320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */,
 				320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */,
 				320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */,
 				320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */,
-				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
 				320A5A189C235877202780D0 /* Three20Network.xcodeproj */,
 				320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */,
 				DD229D0D130495A60083F68E /* UIKit.framework */,
@@ -474,6 +485,7 @@
 		DD229D15130495A60083F68E /* hanginoutwithus */ = {
 			isa = PBXGroup;
 			children = (
+				DDD504251310521E00D429F1 /* Lib */,
 				DD229D1E130495A60083F68E /* hanginoutwithusAppDelegate.h */,
 				DD229D4613049C0B0083F68E /* UI */,
 				DD229D1F130495A60083F68E /* hanginoutwithusAppDelegate.m */,
@@ -498,8 +510,7 @@
 		DD229D33130495A60083F68E /* hanginoutwithusTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD229D3A130495A60083F68E /* hanginoutwithusTests.h */,
-				DD229D3C130495A60083F68E /* hanginoutwithusTests.m */,
+				DDD504391311363B00D429F1 /* Fishrod */,
 				DD229D34130495A60083F68E /* Supporting Files */,
 			);
 			path = hanginoutwithusTests;
@@ -532,6 +543,52 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		DDD504251310521E00D429F1 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DDD504261310523500D429F1 /* Fishrod */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		DDD504261310523500D429F1 /* Fishrod */ = {
+			isa = PBXGroup;
+			children = (
+				DDD5042B131052E900D429F1 /* Slide Menu */,
+			);
+			name = Fishrod;
+			sourceTree = "<group>";
+		};
+		DDD5042B131052E900D429F1 /* Slide Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DDD50427131052E400D429F1 /* FRSlideMenu.h */,
+				DDD50428131052E400D429F1 /* FRSlideMenu.m */,
+				DDD5042C1310536200D429F1 /* FRSlideMenuItem.h */,
+				DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */,
+				DDD50430131054BF00D429F1 /* FRSlideMenuIcon.h */,
+				DDD50431131054BF00D429F1 /* FRSlideMenuIcon.m */,
+			);
+			name = "Slide Menu";
+			sourceTree = "<group>";
+		};
+		DDD504381311363300D429F1 /* Slide Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DDD504341311336F00D429F1 /* FRSlideMenuItemTests.h */,
+				DDD504351311336F00D429F1 /* FRSlideMenuItemTests.m */,
+			);
+			name = "Slide Menu";
+			sourceTree = "<group>";
+		};
+		DDD504391311363B00D429F1 /* Fishrod */ = {
+			isa = PBXGroup;
+			children = (
+				DDD504381311363300D429F1 /* Slide Menu */,
+			);
+			name = Fishrod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,7 +613,7 @@
 			);
 			name = hanginoutwithus;
 			productName = hanginoutwithus;
-			productReference = DD229D09130495A60083F68E /* hanginoutwithus.app */;
+			productReference = DDD503C51310517200D429F1 /* hanginoutwithus.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DD229D2B130495A60083F68E /* hanginoutwithusTests */ = {
@@ -575,7 +632,7 @@
 			);
 			name = hanginoutwithusTests;
 			productName = hanginoutwithusTests;
-			productReference = DD229D2C130495A60083F68E /* hanginoutwithusTests.octest */;
+			productReference = DDD503C71310517200D429F1 /* hanginoutwithusTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -850,7 +907,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD229D38130495A60083F68E /* InfoPlist.strings in Resources */,
-				DD229D3B130495A60083F68E /* hanginoutwithusTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +936,9 @@
 				DD229D1D130495A60083F68E /* main.m in Sources */,
 				DD229D20130495A60083F68E /* hanginoutwithusAppDelegate.m in Sources */,
 				DD229D26130495A60083F68E /* hanginoutwithus.xcdatamodeld in Sources */,
+				DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */,
+				DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
+				DDD50432131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,7 +946,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD229D3D130495A60083F68E /* hanginoutwithusTests.m in Sources */,
+				DDD5042A131052E400D429F1 /* FRSlideMenu.m in Sources */,
+				DDD5042F1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
+				DDD50433131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
+				DDD504361311336F00D429F1 /* FRSlideMenuItemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,19 +1041,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UICommon.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UICommon.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UINavigator.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UINavigator.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Core.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Core.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UI.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UI.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Network.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Network.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Style.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Style.a\"",
 				);
 				SDKROOT = iphoneos;
 			};
@@ -1012,19 +1074,19 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UICommon.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UICommon.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UINavigator.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UINavigator.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Core.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Core.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UI.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20UI.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Network.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Network.a\"",
 					"-force_load",
-					"$(BUILD_DIR)/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Style.a",
+					"\"$(BUILT_PRODUCTS_DIR)/libThree20Style.a\"",
 				);
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
