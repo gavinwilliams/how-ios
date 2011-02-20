@@ -17,4 +17,6 @@
 @property (retain) NSString *normal;
 @property (retain) NSString *highlighted;
 
++(FRSlideMenuIcon *)iconWithImage:(NSString *)theImage highlighted:(NSString *)theHighlightedImage error:(NSError **) theError;
+
 @end

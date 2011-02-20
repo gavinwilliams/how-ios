@@ -13,4 +13,14 @@
 @synthesize normal;
 @synthesize highlighted;
 
++(FRSlideMenuIcon *)iconWithImage:(NSString *)theImage highlighted:(NSString *)theHighlightedImage error:(NSError **)theError {
+	
+	FRSlideMenuIcon *icon = [[[FRSlideMenuIcon alloc] init] autorelease];
+	[icon setNormal:theImage];
+	[icon setHighlighted:theHighlightedImage];
+	
+	return icon;
+	
+}
+
 @end
