@@ -10,7 +10,8 @@
 #import "FRSlideMenuItem.h"
 
 typedef enum {
-	FRSlideMenuErrorPlistDoesNotExist
+	FRSlideMenuErrorPlistDoesNotExist,
+	FRSlideMenuErrorPlistInvalid
 } FRSlideMenuError;
 
 @interface FRSlideMenu : NSObject {

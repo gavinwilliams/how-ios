@@ -40,6 +40,7 @@ NSString *const FRSlideMenuErrorDomain = @"FRSlideMenuError";
 	
 	NSString *plistpath = [[NSBundle mainBundle] pathForResource:plist ofType:@"plist"];
 	NSLog(@"Path: %@", plist);
+	
 	if(plistpath == nil){
 		NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
 		[errorDetail setValue:@"Plist does not exist" forKey:NSLocalizedDescriptionKey];
@@ -48,6 +49,19 @@ NSString *const FRSlideMenuErrorDomain = @"FRSlideMenuError";
 	}
 	
 	NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:plistpath];
+	
+	if(dictionary == nil){
+		NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+		[errorDetail setValue:@"Plist could not be processed, invalid data" forKey:NSLocalizedDescriptionKey];
+		*theError = [NSError errorWithDomain:FRSlideMenuErrorDomain code:FRSlideMenuErrorPlistInvalid userInfo:errorDetail];
+		return false;
+	}
+	
+	NSArray *menu = [dictionary objectForKey:@"navigation"];
+	
+	for (NSDictionary *item in menu) {
+		
+	}
 	
 	return true;
 	
