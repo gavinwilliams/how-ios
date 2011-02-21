@@ -39,7 +39,7 @@ NSString *const FRSlideMenuErrorDomain = @"FRSlideMenuError";
 -(bool)populateFromPlist:(NSString *)plist error:(NSError **)theError {
 	
 	NSString *plistpath = [[NSBundle mainBundle] pathForResource:plist ofType:@"plist"];
-	
+	NSLog(@"Path: %@", plist);
 	if(plistpath == nil){
 		NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
 		[errorDetail setValue:@"Plist does not exist" forKey:NSLocalizedDescriptionKey];

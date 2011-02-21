@@ -41,4 +41,15 @@
 	
 }
 
+-(void)testValidPlist {
+	FRSlideMenu *menu = [[FRSlideMenu alloc] init];
+	NSError *error = nil;
+	
+	bool populateResponse = [menu populateFromPlist:@"navigation" error:&error];
+	
+	STAssertTrue(populateResponse, @"Returns true for existing file");
+	STAssertNil(error, @"Error is nil");
+	
+}
+
 @end

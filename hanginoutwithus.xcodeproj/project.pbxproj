@@ -33,6 +33,7 @@
 		DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD627D2113105006003686BA /* QuartzCore.framework */; };
 		DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */; };
 		DD9627AE1311A71800674874 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
+		DDA6282E13130180006D7151 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042A131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */; };
@@ -905,6 +906,7 @@
 			files = (
 				DD229D1A130495A60083F68E /* InfoPlist.strings in Resources */,
 				DD229D23130495A60083F68E /* MainWindow.xib in Resources */,
+				DDA6282E13130180006D7151 /* navigation.plist in Resources */,
 				DD2A60BC1304A21D001F4BD3 /* Default.png in Resources */,
 				DD2A60BE1304A229001F4BD3 /* Default@2x.png in Resources */,
 			);
