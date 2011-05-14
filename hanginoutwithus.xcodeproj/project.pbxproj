@@ -36,6 +36,8 @@
 		DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */; };
 		DD9627AE1311A71800674874 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDA6282E13130180006D7151 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
+		DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBF2A0A1376FD53006DBF68 /* NavigationController.m */; };
+		DDBF2A0D1376FD53006DBF68 /* NavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */; };
 		DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042A131052E400D429F1 /* FRSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50428131052E400D429F1 /* FRSlideMenu.m */; };
 		DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD5042D1310536200D429F1 /* FRSlideMenuItem.m */; };
@@ -233,6 +235,9 @@
 		DD9627AA13119BDE00674874 /* FRSlideMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuTests.h; sourceTree = "<group>"; };
 		DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuTests.m; sourceTree = "<group>"; };
 		DD9627AD1311A71800674874 /* navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = navigation.plist; sourceTree = "<group>"; };
+		DDBF2A091376FD53006DBF68 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		DDBF2A0A1376FD53006DBF68 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationController.xib; sourceTree = "<group>"; };
 		DDD503C51310517200D429F1 /* hanginoutwithus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hanginoutwithus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD503C71310517200D429F1 /* hanginoutwithusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hanginoutwithusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD50427131052E400D429F1 /* FRSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenu.h; sourceTree = "<group>"; };
@@ -391,6 +396,9 @@
 				DD229D1F130495A60083F68E /* hanginoutwithusAppDelegate.m */,
 				DD229D24130495A60083F68E /* hanginoutwithus.xcdatamodeld */,
 				DD229D16130495A60083F68E /* Supporting Files */,
+				DDBF2A091376FD53006DBF68 /* NavigationController.h */,
+				DDBF2A0A1376FD53006DBF68 /* NavigationController.m */,
+				DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */,
 			);
 			path = hanginoutwithus;
 			sourceTree = "<group>";
@@ -707,6 +715,7 @@
 				DDA6282E13130180006D7151 /* navigation.plist in Resources */,
 				DD2A60BC1304A21D001F4BD3 /* Default.png in Resources */,
 				DD2A60BE1304A229001F4BD3 /* Default@2x.png in Resources */,
+				DDBF2A0D1376FD53006DBF68 /* NavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +757,7 @@
 				DDD50429131052E400D429F1 /* FRSlideMenu.m in Sources */,
 				DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
 				DDD50432131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
+				DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
