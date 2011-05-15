@@ -18,13 +18,16 @@
 @synthesize managedObjectModel=__managedObjectModel;
 
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
+@synthesize navigationController=_navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Override point for customization after application launch.
 	
+	_navigationController = [[NavigationController alloc] initWithNibName:@"NavigationController" bundle:[NSBundle mainBundle]];
+	[_window addSubview:[_navigationController view]];
 	[self.window makeKeyAndVisible];
-    return YES;
+	return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -69,6 +72,7 @@
 	[__managedObjectContext release];
 	[__managedObjectModel release];
 	[__persistentStoreCoordinator release];
+	[_navigationController release];
     [super dealloc];
 }
 
