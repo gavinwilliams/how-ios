@@ -20,6 +20,7 @@
 @synthesize subFavouritesShare;
 @synthesize itemMe;
 @synthesize itemSettings;
+@synthesize controllerView;
 
 
 enum NavigationItemType {
@@ -38,6 +39,8 @@ enum NavigationItemType {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
+        navigator = [TTNavigator navigator];
+        navigator.window
     }
     return self;
 }
@@ -55,6 +58,7 @@ enum NavigationItemType {
 	[subFavouritesShare release];
 	[itemMe release];
 	[itemSettings release];
+    [controllerView release];
     [super dealloc];
 }
 
@@ -186,12 +190,13 @@ enum NavigationItemType {
 		[UIView setAnimationDuration:0.25];
 		[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
 	}
-	
-	[subFavourites setFrame:CGRectMake((subFavouritesFrame.origin.x - subHangOutsFrame.size.width), subFavouritesFrame.origin.y, subFavouritesFrame.size.width, subFavouritesFrame.size.height)];
-	
+    
+    float offset = (itemFavourites.frame.origin.x + itemFavourites.frame.size.width);
+    
+	[subFavourites setFrame:CGRectMake(offset, subFavouritesFrame.origin.y, subFavouritesFrame.size.width, subFavouritesFrame.size.height)];
+    
 	// Move all other elements
 	[itemMe setCenter:CGPointMake((itemMe.center.x + subFavouritesFrame.size.width), itemMe.center.y)];
-	
 	[itemSettings setCenter:CGPointMake((itemSettings.center.x + subFavouritesFrame.size.width), itemSettings.center.y)];
 	
 	if(animate == YES){
@@ -199,6 +204,28 @@ enum NavigationItemType {
 	}
 	
 	subFavouritesIsOpen = YES;
+}
+
+- (IBAction)itemSelect:(UIButton *)button {
+    switch (button.tag) {
+        case kHangOuts:
+            
+            break;
+        case kHangOutsInvite:
+            break;
+        case kHangOutsShare:
+            break;
+        case kFavourites:
+            break;
+        case kFavouritesInvite:
+            break;
+        case kFavouritesShare:
+            break;
+        case kMe:
+            break;
+        case kSettings:
+            break;
+    }
 }
 
 - (IBAction)subNavToggle:(UIButton *)button {
@@ -244,6 +271,7 @@ enum NavigationItemType {
 	[self setSubFavouritesShare:nil];
 	[self setItemMe:nil];
 	[self setItemSettings:nil];
+    [self setControllerView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "Three20/Three20.h"
 
 
 @interface NavigationController : UIViewController {
@@ -22,6 +23,9 @@
 	UIButton *subFavouritesShare;
 	UIButton *itemMe;
 	UIButton *itemSettings;
+    UIScrollView *controllerView;
+    
+    TTNavigator *navigator;
 	
 	CGRect subHangOutsFrame;
 	CGPoint subHangOutsCenter;
@@ -43,6 +47,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *subFavouritesShare;
 @property (nonatomic, retain) IBOutlet UIButton *itemMe;
 @property (nonatomic, retain) IBOutlet UIButton *itemSettings;
+@property (nonatomic, retain) IBOutlet UIScrollView *controllerView;
 
 -(void)closeHangOuts:(BOOL) animate;
 -(void)openHangOuts:(BOOL) animate;
@@ -53,6 +58,6 @@
 -(void)toggleFavourites;
 
 - (IBAction)subNavToggle:(UIButton *)button;
-
+- (IBAction)itemSelect:(UIButton *)button;
 
 @end

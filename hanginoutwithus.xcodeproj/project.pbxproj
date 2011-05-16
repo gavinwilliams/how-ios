@@ -61,6 +61,12 @@
 		DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD627D2113105006003686BA /* QuartzCore.framework */; };
 		DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */; };
 		DD9627AE1311A71800674874 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
+		DDA06A6A13816F3700D336CA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A6813816F3700D336CA /* background.png */; };
+		DDA06A6B13816F3700D336CA /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A6913816F3700D336CA /* background@2x.png */; };
+		DDA06A8113817A0B00D336CA /* startup-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A7F13817A0B00D336CA /* startup-screen.png */; };
+		DDA06A8213817A0B00D336CA /* startup-screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A8013817A0B00D336CA /* startup-screen@2x.png */; };
+		DDA06A8613817CD200D336CA /* HangOutsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA06A8413817CD200D336CA /* HangOutsController.m */; };
+		DDA06A8713817CD200D336CA /* HangOutsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A8513817CD200D336CA /* HangOutsController.xib */; };
 		DDA6282E13130180006D7151 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBF2A0A1376FD53006DBF68 /* NavigationController.m */; };
 		DDBF2A0D1376FD53006DBF68 /* NavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */; };
@@ -291,6 +297,13 @@
 		DD9627AA13119BDE00674874 /* FRSlideMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuTests.h; sourceTree = "<group>"; };
 		DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuTests.m; sourceTree = "<group>"; };
 		DD9627AD1311A71800674874 /* navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = navigation.plist; sourceTree = "<group>"; };
+		DDA06A6813816F3700D336CA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		DDA06A6913816F3700D336CA /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		DDA06A7F13817A0B00D336CA /* startup-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "startup-screen.png"; path = "../startup-screen.png"; sourceTree = "<group>"; };
+		DDA06A8013817A0B00D336CA /* startup-screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "startup-screen@2x.png"; path = "../startup-screen@2x.png"; sourceTree = "<group>"; };
+		DDA06A8313817CD200D336CA /* HangOutsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOutsController.h; sourceTree = "<group>"; };
+		DDA06A8413817CD200D336CA /* HangOutsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOutsController.m; sourceTree = "<group>"; };
+		DDA06A8513817CD200D336CA /* HangOutsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangOutsController.xib; sourceTree = "<group>"; };
 		DDBF2A091376FD53006DBF68 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		DDBF2A0A1376FD53006DBF68 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationController.xib; sourceTree = "<group>"; };
@@ -450,15 +463,14 @@
 		DD229D15130495A60083F68E /* hanginoutwithus */ = {
 			isa = PBXGroup;
 			children = (
+				DDA06A6713816BDE00D336CA /* Hang Outs */,
 				DDD504251310521E00D429F1 /* Lib */,
 				DD229D1E130495A60083F68E /* hanginoutwithusAppDelegate.h */,
 				DD229D4613049C0B0083F68E /* UI */,
 				DD229D1F130495A60083F68E /* hanginoutwithusAppDelegate.m */,
 				DD229D24130495A60083F68E /* hanginoutwithus.xcdatamodeld */,
 				DD229D16130495A60083F68E /* Supporting Files */,
-				DDBF2A091376FD53006DBF68 /* NavigationController.h */,
-				DDBF2A0A1376FD53006DBF68 /* NavigationController.m */,
-				DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */,
+				DDA06A6613816BCC00D336CA /* Navigation */,
 			);
 			path = hanginoutwithus;
 			sourceTree = "<group>";
@@ -507,6 +519,8 @@
 		DD229D4713049C1C0083F68E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DDA06A7F13817A0B00D336CA /* startup-screen.png */,
+				DDA06A8013817A0B00D336CA /* startup-screen@2x.png */,
 				DD444C07138032D900427919 /* icon-selected-settings.png */,
 				DD444C08138032D900427919 /* icon-selected-settings@2x.png */,
 				DD444C09138032D900427919 /* icon-settings.png */,
@@ -514,6 +528,8 @@
 				DD444C1013806C4A00427919 /* navigation-shadow@2x.png */,
 				DD444C0A138032D900427919 /* icon-settings@2x.png */,
 				DD444BF713802DB800427919 /* icon-favourites.png */,
+				DDA06A6813816F3700D336CA /* background.png */,
+				DDA06A6913816F3700D336CA /* background@2x.png */,
 				DD444BFF1380316700427919 /* icon-me.png */,
 				DD444C001380316700427919 /* icon-me@2x.png */,
 				DD444C011380316700427919 /* icon-selected-me.png */,
@@ -541,6 +557,26 @@
 				DD2A60BB1304A21D001F4BD3 /* Default.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		DDA06A6613816BCC00D336CA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DDBF2A091376FD53006DBF68 /* NavigationController.h */,
+				DDBF2A0A1376FD53006DBF68 /* NavigationController.m */,
+				DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		DDA06A6713816BDE00D336CA /* Hang Outs */ = {
+			isa = PBXGroup;
+			children = (
+				DDA06A8313817CD200D336CA /* HangOutsController.h */,
+				DDA06A8413817CD200D336CA /* HangOutsController.m */,
+				DDA06A8513817CD200D336CA /* HangOutsController.xib */,
+			);
+			name = "Hang Outs";
 			sourceTree = "<group>";
 		};
 		DDD504251310521E00D429F1 /* Lib */ = {
@@ -836,6 +872,11 @@
 				DD444C0E138032D900427919 /* icon-settings@2x.png in Resources */,
 				DD444C1113806C4B00427919 /* navigation-shadow.png in Resources */,
 				DD444C1213806C4B00427919 /* navigation-shadow@2x.png in Resources */,
+				DDA06A6A13816F3700D336CA /* background.png in Resources */,
+				DDA06A6B13816F3700D336CA /* background@2x.png in Resources */,
+				DDA06A8113817A0B00D336CA /* startup-screen.png in Resources */,
+				DDA06A8213817A0B00D336CA /* startup-screen@2x.png in Resources */,
+				DDA06A8713817CD200D336CA /* HangOutsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,6 +919,7 @@
 				DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
 				DDD50432131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
 				DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */,
+				DDA06A8613817CD200D336CA /* HangOutsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,15 +1091,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hanginoutwithus/hanginoutwithus-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(BUILT_PRODUCTS_DIR)/../three20/**",
+					"$(BUILT_PRODUCTS_DIR)/../../three20/**",
+				);
 				INFOPLIST_FILE = "hanginoutwithus/hanginoutwithus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1066,14 +1114,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hanginoutwithus/hanginoutwithus-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(BUILT_PRODUCTS_DIR)/../three20/**",
+					"$(BUILT_PRODUCTS_DIR)/../../three20/**",
+				);
 				INFOPLIST_FILE = "hanginoutwithus/hanginoutwithus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
