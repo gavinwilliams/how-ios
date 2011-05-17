@@ -38,9 +38,7 @@ enum NavigationItemType {
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
-        navigator = [TTNavigator navigator];
-        navigator.window
+
     }
     return self;
 }

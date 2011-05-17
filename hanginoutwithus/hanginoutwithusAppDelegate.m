@@ -7,6 +7,7 @@
 //
 
 #import "hanginoutwithusAppDelegate.h"
+#import "HangOutsController.h"
 
 @implementation hanginoutwithusAppDelegate
 
@@ -25,7 +26,17 @@
 	// Override point for customization after application launch.
 	
 	_navigationController = [[NavigationController alloc] initWithNibName:@"NavigationController" bundle:[NSBundle mainBundle]];
-	[_window addSubview:[_navigationController view]];
+	
+	[self.window setRootViewController:_navigationController];
+	
+	self.window.rootViewController.view.frame = CGRectMake(0, 416, _navigationController.view.frame.size.width, _navigationController.view.frame.size.height);
+	
+	HangOutsController *hangoutscontroller = [[HangOutsController alloc] initWithNibName:@"HangOutsController" bundle:[NSBundle mainBundle]];
+	
+	[self.window insertSubview:hangoutscontroller.view belowSubview:_navigationController.view];
+	
+	[hangoutscontroller release];
+	
 	[self.window makeKeyAndVisible];
 	return YES;
 }
