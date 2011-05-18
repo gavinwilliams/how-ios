@@ -59,14 +59,14 @@
 		DD444C1113806C4B00427919 /* navigation-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DD444C0F13806C4A00427919 /* navigation-shadow.png */; };
 		DD444C1213806C4B00427919 /* navigation-shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD444C1013806C4A00427919 /* navigation-shadow@2x.png */; };
 		DD627D2213105006003686BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD627D2113105006003686BA /* QuartzCore.framework */; };
+		DD95D454138440000082B0D6 /* HangOutsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95D452138440000082B0D6 /* HangOutsViewController.m */; };
+		DD95D455138440000082B0D6 /* HangOutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD95D453138440000082B0D6 /* HangOutsViewController.xib */; };
 		DD9627AC13119BDF00674874 /* FRSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */; };
 		DD9627AE1311A71800674874 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDA06A6A13816F3700D336CA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A6813816F3700D336CA /* background.png */; };
 		DDA06A6B13816F3700D336CA /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A6913816F3700D336CA /* background@2x.png */; };
 		DDA06A8113817A0B00D336CA /* startup-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A7F13817A0B00D336CA /* startup-screen.png */; };
 		DDA06A8213817A0B00D336CA /* startup-screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A8013817A0B00D336CA /* startup-screen@2x.png */; };
-		DDA06A8613817CD200D336CA /* HangOutsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA06A8413817CD200D336CA /* HangOutsController.m */; };
-		DDA06A8713817CD200D336CA /* HangOutsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDA06A8513817CD200D336CA /* HangOutsController.xib */; };
 		DDA6282E13130180006D7151 /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9627AD1311A71800674874 /* navigation.plist */; };
 		DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBF2A0A1376FD53006DBF68 /* NavigationController.m */; };
 		DDBF2A0D1376FD53006DBF68 /* NavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */; };
@@ -294,6 +294,9 @@
 		DD444C0F13806C4A00427919 /* navigation-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-shadow.png"; sourceTree = "<group>"; };
 		DD444C1013806C4A00427919 /* navigation-shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-shadow@2x.png"; sourceTree = "<group>"; };
 		DD627D2113105006003686BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD95D451138440000082B0D6 /* HangOutsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOutsViewController.h; sourceTree = "<group>"; };
+		DD95D452138440000082B0D6 /* HangOutsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOutsViewController.m; sourceTree = "<group>"; };
+		DD95D453138440000082B0D6 /* HangOutsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangOutsViewController.xib; sourceTree = "<group>"; };
 		DD9627AA13119BDE00674874 /* FRSlideMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSlideMenuTests.h; sourceTree = "<group>"; };
 		DD9627AB13119BDE00674874 /* FRSlideMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSlideMenuTests.m; sourceTree = "<group>"; };
 		DD9627AD1311A71800674874 /* navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = navigation.plist; sourceTree = "<group>"; };
@@ -301,9 +304,6 @@
 		DDA06A6913816F3700D336CA /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		DDA06A7F13817A0B00D336CA /* startup-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "startup-screen.png"; path = "../startup-screen.png"; sourceTree = "<group>"; };
 		DDA06A8013817A0B00D336CA /* startup-screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "startup-screen@2x.png"; path = "../startup-screen@2x.png"; sourceTree = "<group>"; };
-		DDA06A8313817CD200D336CA /* HangOutsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOutsController.h; sourceTree = "<group>"; };
-		DDA06A8413817CD200D336CA /* HangOutsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOutsController.m; sourceTree = "<group>"; };
-		DDA06A8513817CD200D336CA /* HangOutsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangOutsController.xib; sourceTree = "<group>"; };
 		DDBF2A091376FD53006DBF68 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		DDBF2A0A1376FD53006DBF68 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		DDBF2A0B1376FD53006DBF68 /* NavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationController.xib; sourceTree = "<group>"; };
@@ -572,9 +572,9 @@
 		DDA06A6713816BDE00D336CA /* Hang Outs */ = {
 			isa = PBXGroup;
 			children = (
-				DDA06A8313817CD200D336CA /* HangOutsController.h */,
-				DDA06A8413817CD200D336CA /* HangOutsController.m */,
-				DDA06A8513817CD200D336CA /* HangOutsController.xib */,
+				DD95D451138440000082B0D6 /* HangOutsViewController.h */,
+				DD95D452138440000082B0D6 /* HangOutsViewController.m */,
+				DD95D453138440000082B0D6 /* HangOutsViewController.xib */,
 			);
 			name = "Hang Outs";
 			sourceTree = "<group>";
@@ -876,7 +876,7 @@
 				DDA06A6B13816F3700D336CA /* background@2x.png in Resources */,
 				DDA06A8113817A0B00D336CA /* startup-screen.png in Resources */,
 				DDA06A8213817A0B00D336CA /* startup-screen@2x.png in Resources */,
-				DDA06A8713817CD200D336CA /* HangOutsController.xib in Resources */,
+				DD95D455138440000082B0D6 /* HangOutsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,7 +919,7 @@
 				DDD5042E1310536200D429F1 /* FRSlideMenuItem.m in Sources */,
 				DDD50432131054BF00D429F1 /* FRSlideMenuIcon.m in Sources */,
 				DDBF2A0C1376FD53006DBF68 /* NavigationController.m in Sources */,
-				DDA06A8613817CD200D336CA /* HangOutsController.m in Sources */,
+				DD95D454138440000082B0D6 /* HangOutsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

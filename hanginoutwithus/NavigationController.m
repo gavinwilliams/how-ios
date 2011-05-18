@@ -34,13 +34,12 @@ enum NavigationItemType {
 	kSettings
 };
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-
-    }
-    return self;
+- (id)init {
+	self = [super initWithNibName:@"NavigationController" bundle:[NSBundle mainBundle]];
+	if(self){
+		
+	}
+	return self;
 }
 
 

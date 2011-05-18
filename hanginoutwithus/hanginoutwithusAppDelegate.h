@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NavigationController.h"
+#import "Three20/Three20.h"
 
 @interface hanginoutwithusAppDelegate : NSObject <UIApplicationDelegate> {
 	NavigationController *_navigationController;
