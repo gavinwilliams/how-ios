@@ -25,8 +25,6 @@
 	UIButton *itemSettings;
     UIScrollView *controllerView;
     
-    TTNavigator *navigator;
-	
 	CGRect subHangOutsFrame;
 	CGPoint subHangOutsCenter;
 	BOOL subHangOutsIsOpen;

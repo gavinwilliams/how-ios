@@ -13,4 +13,6 @@
     
 }
 
+-(id)initWithEvent:(NSString *) _id;
+
 @end

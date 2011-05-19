@@ -7,6 +7,7 @@
 //
 
 #import "NavigationController.h"
+#import "HangOutsViewController.h"
 
 
 @implementation NavigationController
@@ -36,7 +37,7 @@ enum NavigationItemType {
 
 - (id)init {
 	self = [super initWithNibName:@"NavigationController" bundle:[NSBundle mainBundle]];
-	if(self){
+	if(self){		
 		
 	}
 	return self;
@@ -86,6 +87,8 @@ enum NavigationItemType {
 	[self closeHangOuts:NO];
 	[self closeFavourites:NO];
 	
+	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"how://hangouts/1"] applyAnimated:true]];
+
     // Do any additional setup after loading the view from its nib.
 	[super viewDidLoad];
 }

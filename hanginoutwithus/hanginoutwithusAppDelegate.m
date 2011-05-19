@@ -7,6 +7,7 @@
 //
 
 #import "hanginoutwithusAppDelegate.h"
+#import "HangOutsViewController.h"
 
 @implementation hanginoutwithusAppDelegate
 
@@ -29,6 +30,11 @@
 	[self.window setRootViewController:_navigationController];
 	
 	self.window.rootViewController.view.frame = CGRectMake(0, 416, _navigationController.view.frame.size.width, _navigationController.view.frame.size.height);
+	
+	TTNavigator *navigator = [TTNavigator navigator];
+	navigator.window = self.window;
+	TTURLMap *map = navigator.URLMap;
+	[map from:@"how://hangouts/(initWithEvent:)" toSharedViewController:[HangOutsViewController class]];
 	
 	[self.window makeKeyAndVisible];
 	return YES;
