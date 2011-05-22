@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "Three20/Three20.h"
-
+#import "HangOutsViewController.h"
+#import "SettingsViewController.h"
+#import "MeViewController.h"
+#import "FavouritesViewController.h"
 
 @interface NavigationController : UIViewController {
     
@@ -23,7 +26,13 @@
 	UIButton *subFavouritesShare;
 	UIButton *itemMe;
 	UIButton *itemSettings;
-    UIScrollView *controllerView;
+	UIView *containerView;
+	
+	// View controllers
+	HangOutsViewController *hangOutsViewController;
+	FavouritesViewController *favouritesViewController;
+	MeViewController *meViewController;
+	SettingsViewController *settingsViewController;
     
 	CGRect subHangOutsFrame;
 	CGPoint subHangOutsCenter;
@@ -45,7 +54,11 @@
 @property (nonatomic, retain) IBOutlet UIButton *subFavouritesShare;
 @property (nonatomic, retain) IBOutlet UIButton *itemMe;
 @property (nonatomic, retain) IBOutlet UIButton *itemSettings;
-@property (nonatomic, retain) IBOutlet UIScrollView *controllerView;
+@property (nonatomic, retain) IBOutlet UIView *containerView;
+@property (nonatomic, retain) HangOutsViewController *hangOutsViewController;
+@property (nonatomic, retain) FavouritesViewController *favouritesViewController;
+@property (nonatomic, retain) MeViewController *meViewController;
+@property (nonatomic, retain) SettingsViewController *settingsViewController;
 
 -(void)closeHangOuts:(BOOL) animate;
 -(void)openHangOuts:(BOOL) animate;
@@ -55,7 +68,6 @@
 -(void)toggleHangOuts;
 -(void)toggleFavourites;
 
-- (IBAction)subNavToggle:(UIButton *)button;
 - (IBAction)itemSelect:(UIButton *)button;
 
 @end

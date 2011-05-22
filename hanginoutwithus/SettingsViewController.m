@@ -1,15 +1,15 @@
 //
-//  HangOutsViewController.m
+//  SettingsViewController.m
 //  hanginoutwithus
 //
 //  Created by Gavin Williams on 22/05/2011.
 //  Copyright 2011 fishrod interactive. All rights reserved.
 //
 
-#import "HangOutsViewController.h"
+#import "SettingsViewController.h"
 
 
-@implementation HangOutsViewController
+@implementation SettingsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +37,11 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+	UILabel *test = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 60)];
+	[test setText:@"Settings"];
+	[self.view addSubview:test];
+	[test release];
     [super viewDidLoad];
 }
 

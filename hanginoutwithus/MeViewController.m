@@ -1,15 +1,15 @@
 //
-//  HangOutsViewController.m
+//  MeViewController.m
 //  hanginoutwithus
 //
 //  Created by Gavin Williams on 22/05/2011.
 //  Copyright 2011 fishrod interactive. All rights reserved.
 //
 
-#import "HangOutsViewController.h"
+#import "MeViewController.h"
 
 
-@implementation HangOutsViewController
+@implementation MeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,8 +36,12 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
-{
-    [super viewDidLoad];
+{   
+	[super viewDidLoad];
+	UILabel *test = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 60)];
+	[test setText:@"Me"];
+	[self.view addSubview:test];
+	[test release];
 }
 
 - (void)viewDidUnload

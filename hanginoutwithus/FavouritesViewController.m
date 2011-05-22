@@ -1,15 +1,15 @@
 //
-//  HangOutsViewController.m
+//  FavouritesViewController.m
 //  hanginoutwithus
 //
 //  Created by Gavin Williams on 22/05/2011.
 //  Copyright 2011 fishrod interactive. All rights reserved.
 //
 
-#import "HangOutsViewController.h"
+#import "FavouritesViewController.h"
 
 
-@implementation HangOutsViewController
+@implementation FavouritesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +37,11 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+	UILabel *test = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 60)];
+	[test setText:@"Favourites"];
+	[self.view addSubview:test];
+	[test release];
     [super viewDidLoad];
 }
 

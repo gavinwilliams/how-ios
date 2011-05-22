@@ -7,8 +7,7 @@
 //
 
 #import "NavigationController.h"
-#import "HangOutsViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @implementation NavigationController
 @synthesize itemHangOuts;
@@ -21,7 +20,11 @@
 @synthesize subFavouritesShare;
 @synthesize itemMe;
 @synthesize itemSettings;
-@synthesize controllerView;
+@synthesize containerView;
+@synthesize hangOutsViewController;
+@synthesize settingsViewController;
+@synthesize favouritesViewController;
+@synthesize meViewController;
 
 
 enum NavigationItemType {
@@ -35,17 +38,13 @@ enum NavigationItemType {
 	kSettings
 };
 
-- (id)init {
-	self = [super initWithNibName:@"NavigationController" bundle:[NSBundle mainBundle]];
-	if(self){		
-		
-	}
-	return self;
-}
-
 
 - (void)dealloc
 {
+	[settingsViewController release];
+	[meViewController release];
+	[favouritesViewController release];
+	[hangOutsViewController release];
 	[itemHangOuts release];
 	[subHangOutsInvite release];
 	[subHangOutsShare release];
@@ -56,7 +55,7 @@ enum NavigationItemType {
 	[subFavouritesShare release];
 	[itemMe release];
 	[itemSettings release];
-    [controllerView release];
+	[containerView release];
     [super dealloc];
 }
 
@@ -72,12 +71,29 @@ enum NavigationItemType {
 
 - (void)viewDidLoad
 {
+	// Load up the view controllers
+	hangOutsViewController = [[HangOutsViewController alloc] initWithNavigationViewController:self];
+	[containerView addSubview:hangOutsViewController.view];
+	
+	favouritesViewController = [[FavouritesViewController alloc] initWithNavigationViewController:self];
+	favouritesViewController.view.hidden = YES;
+	[containerView addSubview:favouritesViewController.view];
+	
+	meViewController = [[MeViewController alloc] initWithNavigationViewController:self];
+	meViewController.view.hidden = YES;
+	[containerView addSubview:meViewController.view];
+	
+	settingsViewController = [[SettingsViewController alloc] initWithNavigationViewController:self];
+	settingsViewController.view.hidden = YES;
+	[containerView addSubview:settingsViewController.view];
 	
 	subHangOutsCenter = [subHangOuts center];
 	subHangOutsFrame = [subHangOuts frame];
 	
 	subFavouritesCenter = [subFavourites center];
 	subFavouritesFrame = [subFavourites frame];
+	
+	itemHangOuts.selected = YES;
 	
 	// Close the hangouts navigation
 	
@@ -86,8 +102,6 @@ enum NavigationItemType {
 	
 	[self closeHangOuts:NO];
 	[self closeFavourites:NO];
-	
-	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"how://hangouts/1"] applyAnimated:true]];
 
     // Do any additional setup after loading the view from its nib.
 	[super viewDidLoad];
@@ -207,38 +221,57 @@ enum NavigationItemType {
 }
 
 - (IBAction)itemSelect:(UIButton *)button {
+	
     switch (button.tag) {
         case kHangOuts:
-            
+            [hangOutsViewController.view setHidden:NO];
+			[meViewController.view setHidden:YES];
+			[settingsViewController.view setHidden:YES];
+			[favouritesViewController.view setHidden:YES];
+			itemHangOuts.selected = YES;
+			itemFavourites.selected = NO;
+			itemMe.selected = NO;
+			itemSettings.selected = NO;
             break;
         case kHangOutsInvite:
             break;
         case kHangOutsShare:
             break;
         case kFavourites:
+            [hangOutsViewController.view setHidden:YES];
+			[meViewController.view setHidden:YES];
+			[settingsViewController.view setHidden:YES];
+			[favouritesViewController.view setHidden:NO];
+			itemHangOuts.selected = NO;
+			itemFavourites.selected = YES;
+			itemMe.selected = NO;
+			itemSettings.selected = NO;
             break;
         case kFavouritesInvite:
             break;
         case kFavouritesShare:
             break;
         case kMe:
+            [hangOutsViewController.view setHidden:YES];
+			[meViewController.view setHidden:NO];
+			[settingsViewController.view setHidden:YES];
+			[favouritesViewController.view setHidden:YES];
+			itemHangOuts.selected = NO;
+			itemFavourites.selected = NO;
+			itemMe.selected = YES;
+			itemSettings.selected = NO;
             break;
         case kSettings:
+            [hangOutsViewController.view setHidden:YES];
+			[meViewController.view setHidden:YES];
+			[settingsViewController.view setHidden:NO];
+			[favouritesViewController.view setHidden:YES];
+			itemHangOuts.selected = NO;
+			itemFavourites.selected = NO;
+			itemMe.selected = NO;
+			itemSettings.selected = YES;
             break;
     }
-}
-
-- (IBAction)subNavToggle:(UIButton *)button {
-	
-	switch (button.tag) {
-		case kHangOuts:
-			[self toggleHangOuts];
-			break;
-		case kFavourites:
-			[self toggleFavourites];
-			break;
-	}
-	
 }
 
 -(void)toggleHangOuts {
@@ -261,6 +294,10 @@ enum NavigationItemType {
 
 - (void)viewDidUnload
 {
+	[self setSettingsViewController: nil];
+	[self setFavouritesViewController:nil];
+	[self setMeViewController:nil];
+	[self setHangOutsViewController:nil];
 	[self setItemHangOuts:nil];
 	[self setSubHangOutsInvite:nil];
 	[self setSubHangOutsShare:nil];
@@ -271,7 +308,7 @@ enum NavigationItemType {
 	[self setSubFavouritesShare:nil];
 	[self setItemMe:nil];
 	[self setItemSettings:nil];
-    [self setControllerView:nil];
+	[self setContainerView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

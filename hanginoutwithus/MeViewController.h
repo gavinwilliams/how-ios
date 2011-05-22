@@ -1,5 +1,5 @@
 //
-//  HangOutsViewController.h
+//  MeViewController.h
 //  hanginoutwithus
 //
 //  Created by Gavin Williams on 22/05/2011.
@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "FRViewController.h"
 
-@interface HangOutsViewController : FRViewController {
-	
+@interface MeViewController : FRViewController {
+    
 }
 
 @end
