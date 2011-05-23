@@ -22,6 +22,7 @@
 
 - (void)dealloc
 {
+    [publicView release];
     [super dealloc];
 }
 
@@ -37,11 +38,14 @@
 
 - (void)viewDidLoad
 {
+    publicView = [[PublicViewController alloc] init];
+    [self.view addSubview:publicView.view];
     [super viewDidLoad];
 }
 
 - (void)viewDidUnload
 {
+    publicView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

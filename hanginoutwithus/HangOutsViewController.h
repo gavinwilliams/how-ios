@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "FRViewController.h"
+#import "PublicViewController.h"
 
 @interface HangOutsViewController : FRViewController {
-	
+	PublicViewController *publicView;
 }
 
 @end
