@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FRViewController.h"
 
-@interface HangOutsViewController : FRViewController {
+@interface HangOutsViewController : FRViewController <UINavigationControllerDelegate> {
     UINavigationController *navigationController;
 }
 

@@ -41,7 +41,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     EventViewController *theEvent = [[EventViewController alloc] init];
-    [self.navigationController pushViewController:theEvent animated:YES];
+	[theEvent setParent:parent];
+    [parent.navigationController pushViewController:theEvent animated:YES];
     [theEvent release];
 }
 

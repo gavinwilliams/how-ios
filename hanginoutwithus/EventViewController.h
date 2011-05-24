@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRViewController.h"
 
-
-@interface EventViewController : UIViewController {
-    
+@interface EventViewController : FRViewController {
+    FRViewController *parent;
 }
+
+@property (retain, nonatomic) FRViewController *parent;
 
 @end

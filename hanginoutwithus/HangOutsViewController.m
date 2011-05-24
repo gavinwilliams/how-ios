@@ -9,6 +9,10 @@
 #import "HangOutsViewController.h"
 #import "EventsRootViewController.h"
 
+@implementation UINavigationBar (custom)
+- (void)drawRect:(CGRect)rect {}
+@end
+
 @implementation HangOutsViewController
 @synthesize navigationController;
 
@@ -39,11 +43,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    EventsRootViewController *eventsView = [[EventsRootViewController alloc] init];
+	
+    EventsRootViewController *eventsView = [[EventsRootViewController alloc] initWithNavigationViewController:self.navigationViewController];
     navigationController = [[UINavigationController alloc] initWithRootViewController:eventsView];
+	[navigationController setDelegate:self];
     [navigationController setWantsFullScreenLayout:NO];
-    navigationController.view.frame = CGRectMake(navigationController.view.frame.origin.x, 20, navigationController.view.frame.size.width, navigationController.view.frame.size.height - 70);
+	navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+	navigationController.view.frame = CGRectMake(navigationController.view.frame.origin.x, 20, navigationController.view.frame.size.width, navigationController.view.frame.size.height - 70);
     [self.view addSubview:navigationController.view];
+	
     [eventsView release];
 }
 

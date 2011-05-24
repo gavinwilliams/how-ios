@@ -9,15 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "EventCell.h"
 #import "EventModel.h"
+#import "FRViewController.h"
 
 
-@interface PublicEventsViewController : UIViewController <UITableViewDataSource> {
+@interface PublicEventsViewController : FRViewController <UITableViewDataSource> {
 	IBOutlet UITableView *publicEventsTable;
-    UIViewController *parent;
+    FRViewController *parent;
 	EventModel *eventMock;
 }
 
 @property (retain, nonatomic) IBOutlet UITableView *publicEventsTable;
-@property (assign, nonatomic) UIViewController *parent;
+@property (retain, nonatomic) FRViewController *parent;
 
 @end

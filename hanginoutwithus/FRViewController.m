@@ -20,6 +20,18 @@
 	return self;
 }
 
+-(id) init {
+	
+	self = [super init];
+	if(self){
+		UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-theme3.png"]];
+		self.navigationItem.titleView = logo;
+		[logo release];
+	}
+	
+	return self;
+}
+
 - (void)dealloc
 {	
 	

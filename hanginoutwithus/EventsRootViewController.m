@@ -16,9 +16,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-theme3.png"]];
-        self.navigationItem.titleView = logo;
-        [logo release];
+
     }
     return self;
 }
@@ -36,15 +34,20 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+	
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [navigationViewController closeHangOuts:YES];
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
     [scrollView setBackgroundColor:[UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0]];
     PublicEventsViewController *publicEventsVC = [[PublicEventsViewController alloc] init];
+	[publicEventsVC setParent:self];
     [publicEventsVC.view setFrame:CGRectMake((self.view.frame.size.width / 2) - (publicEventsVC.view.frame.size.width / 2), 95, publicEventsVC.view.frame.size.width, publicEventsVC.view.frame.size.height)];
     scrollView.contentSize = CGSizeMake(320, (95 + 405));
     [scrollView addSubview:publicEventsVC.view];

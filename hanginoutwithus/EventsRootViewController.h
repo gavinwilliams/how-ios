@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRViewController.h"
 
-
-@interface EventsRootViewController : UIViewController {
+@interface EventsRootViewController : FRViewController {
     
 }
 
