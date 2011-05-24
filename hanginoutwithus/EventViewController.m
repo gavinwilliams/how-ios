@@ -1,22 +1,21 @@
 //
-//  HangOutsViewController.m
+//  EventViewController.m
 //  hanginoutwithus
 //
-//  Created by Gavin Williams on 22/05/2011.
+//  Created by Gavin Williams on 24/05/2011.
 //  Copyright 2011 fishrod interactive. All rights reserved.
 //
 
-#import "HangOutsViewController.h"
-#import "EventsRootViewController.h"
+#import "EventViewController.h"
 
-@implementation HangOutsViewController
-@synthesize navigationController;
+
+@implementation EventViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
+        // Custom initialization
     }
     return self;
 }
@@ -39,12 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    EventsRootViewController *eventsView = [[EventsRootViewController alloc] init];
-    navigationController = [[UINavigationController alloc] initWithRootViewController:eventsView];
-    [navigationController setWantsFullScreenLayout:NO];
-    navigationController.view.frame = CGRectMake(navigationController.view.frame.origin.x, 20, navigationController.view.frame.size.width, navigationController.view.frame.size.height - 70);
-    [self.view addSubview:navigationController.view];
-    [eventsView release];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload

@@ -28,7 +28,7 @@
 	_navigationController = [[NavigationController alloc] init];
 	
 	[self.window setRootViewController:_navigationController];
-	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    [self.window.rootViewController setWantsFullScreenLayout:YES];
 	
 	[self.window makeKeyAndVisible];
 	return YES;

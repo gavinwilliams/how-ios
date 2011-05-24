@@ -99,6 +99,8 @@ enum NavigationItemType {
 	
 	subHangOutsIsOpen = YES;
 	subFavouritesIsOpen = YES;
+    
+    [self setWantsFullScreenLayout:YES];
 	
 	[self closeHangOuts:NO];
 	[self closeFavourites:NO];
